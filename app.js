@@ -16,8 +16,8 @@ app.post('/',(req,res)=>{
      port: 465,
     secure: true,
       auth: {
-        user: "saiashish7777@gmail.com",
-        pass: "shirdisai"
+        user: "saiashish####@gmail.com",
+        pass: "###############"
       },
       tls:{
         rejectUnauthorised:false
@@ -25,8 +25,8 @@ app.post('/',(req,res)=>{
     });
 
 let options={
-  from: "saiashish7777@gmail.com",
-  to: "saiashish7777@gmail.com",
+  from: "saiashish####@gmail.com",
+  to: "saiashish#####@gmail.com",
   subject: "Hello ✔",
   text: "Hello world?",
   html: "<b>Hello world?</b>"
