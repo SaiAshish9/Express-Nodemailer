@@ -26,10 +26,10 @@ app.post('/',(req,res)=>{
 
 let options={
   from: "saiashish####@gmail.com",
-  to: "saiashish#####@gmail.com",
+  to: req.body.email,
   subject: "Hello ✔",
   text: "Hello world?",
-  html: "<b>Hello world?</b>"
+  html: req.body.message
 };
    transporter.sendMail(options,(err,info)=>{
      if(err){
